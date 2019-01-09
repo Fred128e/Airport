@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Airport", "Airport\Airport.csproj", "{1D03AEB1-2522-47C6-ADBF-B4217982B00E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Airport.MVC", "Airport.MVC\Airport.MVC.csproj", "{25CCBA5C-7B82-4A9A-8B46-412921F7379A}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5FF1AA23-F482-4C9F-B623-468C97E78F69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D03AEB1-2522-47C6-ADBF-B4217982B00E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D03AEB1-2522-47C6-ADBF-B4217982B00E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D03AEB1-2522-47C6-ADBF-B4217982B00E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D03AEB1-2522-47C6-ADBF-B4217982B00E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25CCBA5C-7B82-4A9A-8B46-412921F7379A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25CCBA5C-7B82-4A9A-8B46-412921F7379A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25CCBA5C-7B82-4A9A-8B46-412921F7379A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25CCBA5C-7B82-4A9A-8B46-412921F7379A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FF1AA23-F482-4C9F-B623-468C97E78F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF1AA23-F482-4C9F-B623-468C97E78F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF1AA23-F482-4C9F-B623-468C97E78F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF1AA23-F482-4C9F-B623-468C97E78F69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D7C58AD-857B-4CE6-B861-F09BF681C476}
+	EndGlobalSection
+EndGlobal

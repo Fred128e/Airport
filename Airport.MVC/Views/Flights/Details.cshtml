@@ -1,0 +1,48 @@
+﻿@model Airport.MVC.Models.FlightViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FlightViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AirCraftType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AirCraftType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FromLocation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FromLocation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ToLocation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ToLocation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DepartureTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DepartureTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ArrivalTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ArrivalTime)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.FlightId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

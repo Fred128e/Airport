@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Airport.MVC.Models.FlightViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Oversigt over afgange og ankomster</h2>
+<form asp-controller="Flights" asp-action="Index">
+    <p>
+        Fra lufthavn: <input type="text" name="Fromlocation">
+        Til lufthavn: <input type="text" name="ToLocation">
+        <input type="submit" value="Søg" />
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AirCraftType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FromLocation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ToLocation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DepartureTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ArrivalTime)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AirCraftType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FromLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ToLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DepartureTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ArrivalTime)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FlightId">Rediger flyafgang</a> |
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
